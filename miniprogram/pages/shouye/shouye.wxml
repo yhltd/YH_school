@@ -1,0 +1,20 @@
+<!--pages/shouye/shouye.wxml-->
+<view class='mod1'>
+<view class='inputmod'>
+<image class='input-image' src='/images/sousuo.png'>   </image>
+<input class='input'></input>
+</view>
+</view>
+
+<view class="divLine"></view>
+
+<view class='mode'>
+
+<block  wx:for="{{all}}" wx:for-index='i'  wx:key="">
+<view class='mode-area'>
+<image class='mode-image' src='{{all[i].image}}'> </image>
+<text class='mode-text'>{{all[i].text}}</text>
+</view>
+</block>
+
+</view>
